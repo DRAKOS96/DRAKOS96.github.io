@@ -6,11 +6,21 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+		  #langToggle {
+		    position: fixed;
+		    top: 10px;
+		    right: 10px;
+		    padding: 6px 12px;
+		    cursor: pointer;
+		  }
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
+				<button id="langToggle">English</button>
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="profile picture.jpeg" alt="" /></a>
 					<h1><strong>I am Drakos Apostolos</strong>,<br />passionate about technology, focused on building digital solutions.</h1>
@@ -136,6 +146,33 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		<script>
+  const texts = {
+    en: {
+      langToggle: 'Ελληνικά',
+      mainTitle: 'I am Drakos Apostolos, a tech enthusiast passionate about software development.',
+      introTitle: "Hello! I'm Drakos Apostolos, a passionate developer from Greece who loves building creative solutions through code.",
+      introPara: "My passion for computers and technology began in my teenage years. Today, I focus on developing websites and applications, always driven by a desire to create innovative and user-friendly solutions."
+    },
+    gr: {
+      langToggle: 'English',
+      mainTitle: 'Είμαι ο Απόστολος Δράκος, ένας ενθουσιώδης της τεχνολογίας με πάθος για την ανάπτυξη λογισμικού.',
+      introTitle: 'Γεια σας! Είμαι ο Απόστολος Δράκος, παθιασμένος προγραμματιστής από την Ελλάδα που αγαπά να δημιουργεί καινοτόμες λύσεις μέσω κώδικα.',
+      introPara: 'Το πάθος μου για τους υπολογιστές και την τεχνολογία ξεκίνησε στην εφηβεία μου. Σήμερα εστιάζω στην ανάπτυξη ιστοσελίδων και εφαρμογών, πάντα με στόχο να δημιουργώ καινοτόμες και φιλικές προς το χρήστη λύσεις.'
+    }
+  };
+
+  let currentLang = 'en';
+
+  document.getElementById('langToggle').addEventListener('click', () => {
+    currentLang = currentLang === 'en' ? 'gr' : 'en';
+
+    document.getElementById('langToggle').textContent = texts[currentLang].langToggle;
+    document.getElementById('mainTitle').textContent = texts[currentLang].mainTitle;
+    document.getElementById('introTitle').textContent = texts[currentLang].introTitle;
+    document.getElementById('introPara').textContent = texts[currentLang].introPara;
+  });
+</script>
 
 	</body>
 </html>
