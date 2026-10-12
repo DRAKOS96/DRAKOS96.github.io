@@ -1,229 +1,445 @@
+
 <!DOCTYPE HTML>
-
 <html>
-	<head>
-		<title>DrakosApostolosPortfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<style>
-		 #langToggle.fancy-btn {
-	position: fixed;
-	top: 15px;
-	right: 15px;
-	padding: 10px 18px;
-	background: linear-gradient(135deg, #667eea, #764ba2);
-	color: white;
-	border: none;
-	border-radius: 25px;
-	font-weight: 600;
-	font-size: 14px;
-	cursor: pointer;
-	box-shadow: 0 4px 8px rgba(102, 126, 234, 0.4);
-	transition: all 0.3s ease;
-	z-index: 9999;
-	user-select: none;
-}
+<head>
+    <title>Drakos Apostolos Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 
-#langToggle.fancy-btn:hover {
-	background: linear-gradient(135deg, #764ba2, #667eea);
-	box-shadow: 0 6px 12px rgba(118, 75, 162, 0.6);
-	transform: translateY(-3px);
-}
+    <style>
+        #langToggle.fancy-btn {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            padding: 10px 18px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s ease;
+            z-index: 9999;
+            user-select: none;
+        }
 
-#langToggle.fancy-btn.clicked {
-	transform: scale(0.95);
-	opacity: 0.8;
-	transition: all 0.2s ease;
-}
-		</style>
-	</head>
-	<body class="is-preload">
+        #langToggle.fancy-btn:hover {
+            background: linear-gradient(135deg, #764ba2, #667eea);
+            box-shadow: 0 6px 12px rgba(118, 75, 162, 0.6);
+            transform: translateY(-3px);
+        }
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="profile-picture.jpg" alt="" /></a>
-					<button class="fancy-btn" id="langToggle">English</button>
-					<h1 id="mainTitle"><strong>I am Drakos Apostolos</strong>,<br />passionate about technology, focused on building digital solutions.</h1>
-				</div>
-			</header>
+        #langToggle.fancy-btn.clicked {
+            transform: scale(0.95);
+            opacity: 0.8;
+            transition: all 0.2s ease;
+        }
+    </style>
+</head>
 
-		<!-- Main -->
-			<div id="main">
+<body class="is-preload">
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2 id="introTitle">Hello! I'm Drakos Apostolos, a passionate developer from Greece, born in 1996. I love turning ideas into reality through code and enjoy creating new, meaningful digital experiences.</h2>
-						</header>
-						<p id="introPara">My passion for computers and technology began in my teenage years. Today, I focus on developing websites and applications, always driven by a desire to create innovative and user-friendly solutions. I am actively seeking new opportunities to grow as a developer, contribute to meaningful projects, and collaborate with others. My ability to quickly adapt to new technologies, along with my team-oriented mindset, makes me a valuable addition to any organization.</p>
-						<ul class="actions">
-							<li><a href="https://www.dropbox.com/scl/fi/wu81poifep7yn60jl7hbp/DrakosApostolosCV.pdf?rlkey=pr5e06gl6u2tk4r2o70jbr5jl&st=ag1krt6v&dl=0" download class="button">Resume</a></li>
-						</ul>
-					</section>
+    <!-- Header -->
+    <header id="header">
+        <div class="inner">
+            <a href="#" class="image avatar">
+                <img src="profile-picture.jpg" alt="Apostolos Drakos" />
+            </a>
 
-				<!-- Two -->
-				<!-- Experience -->
-					<section id="experience">
-					  <h2 id="experienceTitle">Work Experience</h2>
-					  <div class="row">
-                         <!-- Keyvoto -->
+            <button class="fancy-btn" id="langToggle">Ελληνικά</button>
+
+            <h1 id="mainTitle">
+                <strong>I am Drakos Apostolos</strong>,<br />
+                passionate about technology, focused on building digital solutions.
+            </h1>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Introduction -->
+        <section id="one">
+            <header class="major">
+                <h2 id="introTitle">
+                    Hello! I'm Drakos Apostolos, a passionate developer from Greece,
+                    born in 1996. I love turning ideas into reality through code
+                    and enjoy creating new, meaningful digital experiences.
+                </h2>
+            </header>
+
+            <p id="introPara">
+                My passion for computers and technology began in my teenage years.
+                Today, I focus on developing websites and applications, always
+                driven by a desire to create innovative and user-friendly solutions.
+                I am actively seeking new opportunities to grow as a developer,
+                contribute to meaningful projects, and collaborate with others.
+                My ability to quickly adapt to new technologies, along with my
+                team-oriented mindset, makes me a valuable addition to any organization.
+            </p>
+
+            <ul class="actions">
+                <li>
+                    <a href="https://www.dropbox.com/scl/fi/wu81poifep7yn60jl7hbp/DrakosApostolosCV.pdf?rlkey=pr5e06gl6u2tk4r2o70jbr5jl&st=ag1krt6v&dl=0"
+                       class="button">
+                        Resume
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Work Experience -->
+        <section id="experience">
+            <h2 id="experienceTitle">Work Experience</h2>
+
+            <div class="row">
+
+                <!-- Keyvoto -->
+                <article class="col-6 col-12-xsmall">
+                    <h3>Frontend Developer – Keyvoto</h3>
+                    <p><strong>November 2025 – Present | Athens, Greece</strong></p>
+
+                    <ul>
+                        <li>Develop and maintain responsive web applications using Angular and Tailwind CSS.</li>
+                        <li>Build reusable and scalable UI components.</li>
+                        <li>Implement modern UI/UX designs with a focus on performance and maintainability.</li>
+                        <li>Collaborate with cross-functional teams to deliver high-quality software solutions.</li>
+                    </ul>
+
+                    <p><strong>Technologies:</strong> Angular, TypeScript, Tailwind CSS</p>
+                </article>
+
+                <!-- Mindseed -->
+                <article class="col-6 col-12-xsmall">
+                    <h3>Software Developer – Mindseed</h3>
+                    <p><strong>December 2023 – November 2025 | Athens, Greece</strong></p>
+
+                    <ul>
+                        <li>Developed web applications using HTML, CSS, JavaScript, and ASP.NET.</li>
+                        <li>Integrated REST APIs and handled asynchronous data.</li>
+                        <li>Used Git for version control and collaboration.</li>
+                        <li>Participated in team projects and code reviews.</li>
+                    </ul>
+
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript, ASP.NET, Git</p>
+                </article>
+
+                <!-- ICAP -->
+                <article class="col-6 col-12-xsmall">
+                    <h3>Customer Service Agent – ICAP</h3>
+                    <p><strong>September 2023 – November 2023 | Athens, Greece</strong></p>
+
+                    <ul>
+                        <li>Handled customer inquiries and provided efficient customer support.</li>
+                        <li>Developed communication, teamwork, and problem-solving skills.</li>
+                        <li>Maintained professionalism while working in a fast-paced environment.</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Personal Projects -->
+        <section id="two">
+            <h2 id="projectsTitle">Personal Projects</h2>
+
+            <div class="row">
+
+                <article class="col-6 col-12-xsmall work-item">
+                    <a href="https://specialdogs.gr/">
+                        <img src="newLogo2.jpeg" alt="Specialdogs website" class="image fit thumb" />
+                    </a>
+
+                    <h3 id="specialdogsTitle">Responsive Website</h3>
+
+                    <p id="specialdogsDesc">
+                        This is a website built using WordPress and the Avada theme.
+                        It features a responsive design and user-friendly functionality,
+                        providing a digital space that meets the needs of its users and clients.
+                    </p>
+                </article>
+
+                <article class="col-6 col-12-xsmall work-item">
+                    <a href="https://play.google.com/store/apps/details?id=com.UniversityPiraeus.FeedthePacARman&fbclid=IwAR0A016nmtJORyxjTiCqp1Tvsey4OJ29pEbLtMAPHFkwN7xfzDTdqb8hw1Q">
+                        <img src="feedThePacArManScreen.jpg" alt="Feed the PacArMan game" class="image fit thumb" />
+                    </a>
+
+                    <h3 id="pacarmanTitle">Android Application – Unity Engine</h3>
+
+                    <p id="pacarmanDesc">
+                        Feed the PacArMan is an Android game based on augmented reality.
+                        I developed it with my fellow student, Ioannis Kounatidis.
+                        The game was created for educational purposes and is available on Google Play.
+                    </p>
+                </article>
+
+            </div>
+
+            <ul class="actions">
+                <li>
+                    <a href="https://github.com/DRAKOS96/Portfolio" class="button" id="portfolioButton">
+                        Full Portfolio
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section id="three">
+            <h2 id="contactTitle">Get In Touch</h2>
+
+            <div class="col-4 col-12-small">
+                <ul class="labeled-icons">
+
+                    <li>
+                        <h3 class="icon solid fa-home">
+                            <span class="label">Address</span>
+                        </h3>
+                        <span id="contactAddress">
+                            Lochagou Xronopoulou 34<br />
+                            Alimos, Attiki<br />
+                            Greece
+                        </span>
+                    </li>
+
+                    <li>
+                        <h3 class="icon solid fa-mobile-alt">
+                            <span class="label">Phone</span>
+                        </h3>
+                        <a href="tel:+306989910362">+30 6989910362</a>
+                    </li>
+
+                    <li>
+                        <h3 class="icon solid fa-envelope">
+                            <span class="label">Email</span>
+                        </h3>
+                        <a href="mailto:apodrak96@gmail.com">apodrak96@gmail.com</a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+
+            <ul class="icons">
+                <li>
+                    <a href="https://www.facebook.com/apostolis.drakos.5" class="icon brands fa-facebook">
+                        <span class="label">Facebook</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/DRAKOS96" class="icon brands fa-github">
+                        <span class="label">Github</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/apostolos-drakos-346375276/" class="icon brands fa-linkedin">
+                        <span class="label">LinkedIn</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mailto:apodrak96@gmail.com" class="icon solid fa-envelope">
+                        <span class="label">Email</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="copyright">
+                <li>&copy; Drakos A.</li>
+            </ul>
+
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Language Toggle -->
+    <script>
+        const texts = {
+            en: {
+                langToggle: 'Ελληνικά',
+
+                mainTitle: '<strong>I am Drakos Apostolos</strong>,<br />passionate about technology, focused on building digital solutions.',
+
+                introTitle: "Hello! I'm Drakos Apostolos, a passionate developer from Greece, born in 1996. I love turning ideas into reality through code and enjoy creating new, meaningful digital experiences.",
+
+                introPara: "My passion for computers and technology began in my teenage years. Today, I focus on developing websites and applications, always driven by a desire to create innovative and user-friendly solutions. I am actively seeking new opportunities to grow as a developer, contribute to meaningful projects, and collaborate with others. My ability to quickly adapt to new technologies, along with my team-oriented mindset, makes me a valuable addition to any organization.",
+
+                experienceTitle: 'Work Experience',
+
+                experienceHtml: `
+                    <div class="row">
                         <article class="col-6 col-12-xsmall">
-                        <h3>Frontend Developer – Keyvoto</h3>
-                        <p><strong>November 2025 – Present | Athens, Greece</strong></p>
-                        <ul>
-                            <li>Develop and maintain responsive web applications using Angular and Tailwind CSS.</li>
-                            <li>Build reusable and scalable UI components.</li>
-                            <li>Implement modern UI/UX designs with a focus on performance and maintainability.</li>
-                            <li>Collaborate with cross-functional teams to deliver high-quality software solutions.</li>
-                        </ul>
-                        <p><strong>Technologies:</strong> Angular, TypeScript, Tailwind CSS, Git</p>
+                            <h3>Frontend Developer – Keyvoto</h3>
+                            <p><strong>November 2025 – Present | Athens, Greece</strong></p>
+                            <ul>
+                                <li>Develop and maintain responsive web applications using Angular and Tailwind CSS.</li>
+                                <li>Build reusable and scalable UI components.</li>
+                                <li>Implement modern UI/UX designs focused on performance and maintainability.</li>
+                                <li>Collaborate with cross-functional teams to deliver high-quality software solutions.</li>
+                            </ul>
+                            <p><strong>Technologies:</strong> Angular, TypeScript, Tailwind CSS</p>
                         </article>
-					    <!-- Mindseed -->
+
                         <article class="col-6 col-12-xsmall">
-                        <h3>Software Developer – Mindseed</h3>
-                        <p><strong>December 2023 – November 2025 | Athens, Greece</strong></p>
-                        <ul>
-                            <li>Developed web applications using HTML, CSS, JavaScript and .NET.</li>
-                            <li>Integrated REST APIs and handled asynchronous data.</li>
-                            <li>Used Git for version control and team collaboration.</li>
-                            <li>Participated in team projects and code reviews.</li>
-                        </ul>
-                        <p><strong>Technologies:</strong> HTML, CSS, JavaScript, .NET, Git</p>
+                            <h3>Software Developer – Mindseed</h3>
+                            <p><strong>December 2023 – November 2025 | Athens, Greece</strong></p>
+                            <ul>
+                                <li>Developed web applications using HTML, CSS, JavaScript, and ASP.NET.</li>
+                                <li>Integrated REST APIs and handled asynchronous data.</li>
+                                <li>Used Git for version control and collaboration.</li>
+                                <li>Participated in team projects and code reviews.</li>
+                            </ul>
+                            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, ASP.NET, Git</p>
                         </article>
-					    <!-- ICAP -->
+
                         <article class="col-6 col-12-xsmall">
-                        <h3>Customer Service Agent – ICAP</h3>
-                        <p><strong>September 2023 – November 2023 | Athens, Greece</strong></p>
-                        <ul>
-                            <li>Handled customer inquiries and provided efficient customer support.</li>
-                            <li>Developed communication, teamwork and problem-solving skills.</li>
-                            <li>Maintained professionalism while working in a fast-paced environment.</li>
-                        </ul>
+                            <h3>Customer Service Agent – ICAP</h3>
+                            <p><strong>September 2023 – November 2023 | Athens, Greece</strong></p>
+                            <ul>
+                                <li>Handled customer inquiries and provided efficient customer support.</li>
+                                <li>Developed communication, teamwork, and problem-solving skills.</li>
+                                <li>Maintained professionalism in a fast-paced environment.</li>
+                            </ul>
                         </article>
-					  </div>
-					</section>
-					<section id="two">
-						<h2>Personal Projects</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://specialdogs.gr/"><img src="newLogo2.jpeg" alt="" class="image fit thumb" /></a>
-								<h3>Responisve web site</h3>
-								<p>This is a site built from the beginning in wordpress, using "Avada" tool and has stunning desing and user-friendly functionality. WordPress and Avada have enabled foundation to produce a dynamic digital space that met both the needs of its users and clients.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://play.google.com/store/apps/details?id=com.UniversityPiraeus.FeedthePacARman&fbclid=IwAR0A016nmtJORyxjTiCqp1Tvsey4OJ29pEbLtMAPHFkwN7xfzDTdqb8hw1Q"><img src="feedThePacArManScreen.jpg" alt="" class="image fit thumb" /></a>
-								<h3>Android application created by "Unity Engine"</h3>
-								<p>"Feed the PacArMan" is a game for android users based on augmented reality technology. I created it with my fellow student, Kounatidis Ioannis. Anyone can easily download it from Google Play store and enjoy it. We created this for educational purposes. </p>
-							</article>
-						</div>
-						<ul class="actions">
-							<li><a href="https://github.com/DRAKOS96/Portfolio" class="button">Full Portfolio</a></li>
-						</ul>
-					</section>
+                    </div>
+                `,
 
-				<!-- Three -->
-					<section id="three">
-						<h2>Get In Touch</h2>
-						<!-- <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p> -->
-						<!-- <div class="row">
-							<div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div> -->
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										Lochagou Xronopoulou 34<br />
-										Alimos, Attiki<br />
-										Greece
-									</li>
-									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										<a href="tel:+306989910362">+30 6989910362</a>
-									</li>
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="mailto:apodrak96@gmail.com">apodrak96@gmail.com</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
+                projectsTitle: 'Personal Projects',
+                specialdogsTitle: 'Responsive Website',
+                specialdogsDesc: 'A responsive website built using WordPress and the Avada theme. It features user-friendly functionality and a design tailored to the needs of its users and clients.',
+                pacarmanTitle: 'Android Application – Unity Engine',
+                pacarmanDesc: 'Feed the PacArMan is an Android game based on augmented reality. I developed it with my fellow student, Ioannis Kounatidis. The game was created for educational purposes and is available on Google Play.',
+                portfolioButton: 'Full Portfolio',
+                contactTitle: 'Get In Touch',
+                contactAddress: 'Lochagou Xronopoulou 34<br />Alimos, Attiki<br />Greece'
+            },
 
-			</div>
+            gr: {
+                langToggle: 'English',
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.facebook.com/apostolis.drakos.5" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="https://github.com/DRAKOS96" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/apostolos-drakos-346375276/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="mailto:apodrak96@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Drakos A.</li>
-					</ul>
-				</div>
-			</footer>
+                mainTitle: '<strong>Είμαι ο Απόστολος Δράκος</strong>,<br />με πάθος για την τεχνολογία και την ανάπτυξη ψηφιακών λύσεων.',
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-		<script>
-  const texts = {
-    en: {
-      langToggle: 'Ελληνικά',
-      mainTitle: 'I am Drakos Apostolos, a tech enthusiast passionate about software development.',
-      introTitle: "Hello! I'm Drakos Apostolos, a passionate developer from Greece who loves building creative solutions through code.",
-      introPara: "My passion for computers and technology began in my teenage years. Today, I focus on developing websites and applications, always driven by a desire to create innovative and user-friendly solutions."
-    },
-    gr: {
-      langToggle: 'English',
-      mainTitle: 'Είμαι ο Απόστολος Δράκος, ένας ενθουσιώδης της τεχνολογίας με πάθος για την ανάπτυξη λογισμικού.',
-      introTitle: 'Γεια σας! Είμαι ο Απόστολος Δράκος, παθιασμένος προγραμματιστής από την Ελλάδα που αγαπά να δημιουργεί καινοτόμες λύσεις μέσω κώδικα.',
-      introPara: 'Το πάθος μου για τους υπολογιστές και την τεχνολογία ξεκίνησε στην εφηβεία μου. Σήμερα εστιάζω στην ανάπτυξη ιστοσελίδων και εφαρμογών, πάντα με στόχο να δημιουργώ καινοτόμες και φιλικές προς το χρήστη λύσεις.'
-    }
-  };
+                introTitle: 'Γεια σας! Είμαι ο Απόστολος Δράκος, προγραμματιστής από την Ελλάδα, γεννημένος το 1996. Μου αρέσει να μετατρέπω ιδέες σε πραγματικότητα μέσω του προγραμματισμού και να δημιουργώ χρήσιμες ψηφιακές εμπειρίες.',
 
-  let currentLang = 'en';
+                introPara: 'Το πάθος μου για τους υπολογιστές και την τεχνολογία ξεκίνησε στην εφηβεία μου. Σήμερα ασχολούμαι κυρίως με την ανάπτυξη ιστοσελίδων και εφαρμογών, με στόχο τη δημιουργία καινοτόμων και εύχρηστων λύσεων. Αναζητώ ευκαιρίες να εξελιχθώ ως developer, να συνεισφέρω σε ενδιαφέροντα projects και να συνεργαστώ με άλλους επαγγελματίες.',
 
-  function fadeTextChange(selector, text) {
-			$(selector).fadeOut(300, function() {
-				$(this).text(text).fadeIn(300);
-			});
-		}
+                experienceTitle: 'Επαγγελματική Εμπειρία',
 
-		$('#langToggle').on('click', function() {
-			currentLang = currentLang === 'en' ? 'gr' : 'en';
+                experienceHtml: `
+                    <div class="row">
+                        <article class="col-6 col-12-xsmall">
+                            <h3>Frontend Developer – Keyvoto</h3>
+                            <p><strong>Νοέμβριος 2025 – Σήμερα | Αθήνα</strong></p>
+                            <ul>
+                                <li>Ανάπτυξη και συντήρηση responsive web εφαρμογών με Angular και Tailwind CSS.</li>
+                                <li>Δημιουργία επαναχρησιμοποιήσιμων και επεκτάσιμων UI components.</li>
+                                <li>Υλοποίηση σύγχρονων UI/UX σχεδιασμών με έμφαση στην απόδοση και τη συντηρησιμότητα.</li>
+                                <li>Συνεργασία με διαφορετικές ομάδες για την ανάπτυξη ποιοτικών λύσεων λογισμικού.</li>
+                            </ul>
+                            <p><strong>Τεχνολογίες:</strong> Angular, TypeScript, Tailwind CSS</p>
+                        </article>
 
-			$(this).addClass('clicked');
+                        <article class="col-6 col-12-xsmall">
+                            <h3>Software Developer – Mindseed</h3>
+                            <p><strong>Δεκέμβριος 2023 – Νοέμβριος 2025 | Αθήνα</strong></p>
+                            <ul>
+                                <li>Ανάπτυξη web εφαρμογών με HTML, CSS, JavaScript και ASP.NET.</li>
+                                <li>Ενσωμάτωση REST APIs και διαχείριση ασύγχρονων δεδομένων.</li>
+                                <li>Χρήση του Git για έλεγχο εκδόσεων και συνεργασία στην ομάδα.</li>
+                                <li>Συμμετοχή σε ομαδικά projects και code reviews.</li>
+                            </ul>
+                            <p><strong>Τεχνολογίες:</strong> HTML, CSS, JavaScript, ASP.NET, Git</p>
+                        </article>
 
-			setTimeout(() => {
-				$(this).removeClass('clicked');
-			}, 200);
+                        <article class="col-6 col-12-xsmall">
+                            <h3>Εκπρόσωπος Εξυπηρέτησης Πελατών – ICAP</h3>
+                            <p><strong>Σεπτέμβριος 2023 – Νοέμβριος 2023 | Αθήνα</strong></p>
+                            <ul>
+                                <li>Διαχείριση ερωτημάτων πελατών και παροχή αποτελεσματικής υποστήριξης.</li>
+                                <li>Ανάπτυξη δεξιοτήτων επικοινωνίας, ομαδικότητας και επίλυσης προβλημάτων.</li>
+                                <li>Διατήρηση επαγγελματικής συμπεριφοράς σε περιβάλλον με γρήγορους ρυθμούς.</li>
+                            </ul>
+                        </article>
+                    </div>
+                `,
 
-			fadeTextChange('#mainTitle', texts[currentLang].mainTitle);
-			fadeTextChange('#introTitle', texts[currentLang].introTitle);
-			fadeTextChange('#introPara', texts[currentLang].introPara);
-			$(this).text(texts[currentLang].langToggle);
-		});
-</script>
+                projectsTitle: 'Προσωπικά Projects',
+                specialdogsTitle: 'Responsive Ιστοσελίδα',
+                specialdogsDesc: 'Μια responsive ιστοσελίδα που δημιουργήθηκε με WordPress και το theme Avada. Διαθέτει φιλικό προς τον χρήστη σχεδιασμό και λειτουργικότητα προσαρμοσμένη στις ανάγκες των χρηστών και των πελατών.',
+                pacarmanTitle: 'Android Εφαρμογή – Unity Engine',
+                pacarmanDesc: 'Το Feed the PacArMan είναι ένα παιχνίδι Android που βασίζεται στην τεχνολογία επαυξημένης πραγματικότητας. Το ανέπτυξα μαζί με τον συμφοιτητή μου, Ιωάννη Κουνάδη. Δημιουργήθηκε για εκπαιδευτικούς σκοπούς και είναι διαθέσιμο στο Google Play.',
+                portfolioButton: 'Πλήρες Portfolio',
+                contactTitle: 'Επικοινωνία',
+                contactAddress: 'Λοχαγού Χρονοπούλου 34<br />Άλιμος, Αττική<br />Ελλάδα'
+            }
+        };
 
-	</body>
+        let currentLang = 'en';
+
+        function fadeTextChange(selector, text) {
+            $(selector).fadeOut(200, function () {
+                $(this).text(text).fadeIn(200);
+            });
+        }
+
+        function updateLanguage(lang) {
+            currentLang = lang;
+
+            const content = texts[lang];
+
+            // Update header and introduction
+            $('#mainTitle').html(content.mainTitle);
+            $('#introTitle').text(content.introTitle);
+            $('#introPara').text(content.introPara);
+
+            // Update work experience
+            $('#experienceTitle').text(content.experienceTitle);
+            $('#experience .row').replaceWith(content.experienceHtml);
+
+            // Update personal projects
+            $('#projectsTitle').text(content.projectsTitle);
+            $('#specialdogsTitle').text(content.specialdogsTitle);
+            $('#specialdogsDesc').text(content.specialdogsDesc);
+            $('#pacarmanTitle').text(content.pacarmanTitle);
+            $('#pacarmanDesc').text(content.pacarmanDesc);
+            $('#portfolioButton').text(content.portfolioButton);
+
+            // Update contact section
+            $('#contactTitle').text(content.contactTitle);
+            $('#contactAddress').html(content.contactAddress);
+
+            // Update button label
+            $('#langToggle').text(content.langToggle);
+        }
+
+        $('#langToggle').on('click', function () {
+            $(this).addClass('clicked');
+
+            setTimeout(() => {
+                $(this).removeClass('clicked');
+            }, 200);
+
+            updateLanguage(currentLang === 'en' ? 'gr' : 'en');
+        });
+    </script>
+
+</body>
 </html>
